@@ -441,7 +441,7 @@ client.on("roleDelete", async role => {
 ///////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////
 client.on("message", async message => {
-  let pref = (await db.fetch(`prefix_${message.guild.id}`)) || "c+";
+  let pref = (await db.fetch(`prefix_${message.guild.id}`)) || "!";
   let dil = await db.fetch(`dil_${message.guild.id}`);
   if (message.content === "<@!783211731279282186>") {
 
